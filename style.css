@@ -95,6 +95,17 @@ header{
     cursor: pointer;
 }
 
+.oval-container {
+    width: 20vw; /* Adjust the width as needed, set as a percentage of viewport width */
+    height: 10vw; /* Adjust the height as needed, set as a percentage of viewport width */
+    background-color: #fff; /* Set your oval container background color */
+    border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+    overflow: hidden;
+    position: absolute;
+    top: 5%; /* Adjust the distance from the top as a percentage of the viewport height */
+    left: 5%; /* Adjust the distance from the left as a percentage of the viewport width */
+}
+
 @media screen and (min-width:800px) {
     .nav{
         position: relative;
@@ -241,6 +252,40 @@ header{
 
 .activeIndicator{
    opacity: 1;
+}
+
+/*New Carousel*/
+
+.new-carouselContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    scroll-behavior: smooth;
+}
+
+.new-eachCarousel {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--lightgrey);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: 20px;
+    margin: auto;
+    width: 30%;
+    height: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+    .new-eachCarousel {
+        width: 100%; /* Make items take full width when screen size is small */
+    }
 }
 
 @media screen and (min-width:700px) {
