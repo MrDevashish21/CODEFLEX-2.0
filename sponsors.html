@@ -268,6 +268,44 @@
         .chooseButton:hover {
             background-color: var(--secondarycolor);
         }
+
+        @media only screen and (max-width: 600px) {
+    /* Adjustments for smaller screens */
+    .logo-container img {
+        width: 80%;
+    }
+    .nav-links {
+        display: none;
+    }
+    .social-links {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Card adjustments for mobile view */
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the cards horizontally */
+    }
+
+    .card {
+        width: 100%; /* Each card takes full width of the container */
+        margin-bottom: 20px; /* Space between cards */
+    }
+}
+
+
+/* Tablet and Desktop Styles */
+@media only screen and (min-width: 601px) {
+    /* Add tablet and desktop styles here */
+}
     </style>
 </head>
 
@@ -555,7 +593,7 @@ PES focuses on the scientific, engineering, and technological aspects of generat
     <footer>
         <div class="joinSection">
             <div class="joinDesc">
-                <h1 class="sectionHeader">CodeFlex 3.0 - Register Now!</h1>
+                <h1 class="sectionHeader">CodeFlex 3.O - Register Now!</h1>
                 <p class="sectionPara">
                     Ready to take on the CodeFlex challenge? Register now and unlock a world of coding excitement!
                 </p>
@@ -604,7 +642,7 @@ PES focuses on the scientific, engineering, and technological aspects of generat
         </div>
 
         <div class="footerCopyright">
-             <p>&copy; 2024 design and developed by <a href="#" class="developedBy">IEEE SB Student Branch</a>.</p>
+             <p>&copy; 2024 design and developed by <a href="#" class="developedBy">IEEE SB Jain Student Branch</a>.</p>
         </div>
     </footer>
     
